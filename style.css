@@ -29,7 +29,16 @@ body{margin:0;font-family:Poppins,sans-serif;background:var(--arena);color:var(-
   align-items:center;
 }
 select{border:none;background:transparent;font-family:Poppins,sans-serif;font-size:14px;color:var(--verde);cursor:pointer}
-.hero{min-height:560px;margin-top:92px;background:linear-gradient(90deg,rgba(0,0,0,.64),rgba(0,0,0,.20)),url("images/hero.jpg") center/cover no-repeat;display:flex;align-items:center;padding:85px 7%;color:white;animation:heroMove 20s ease-in-out infinite alternate}
+.hero{
+min-height:560px;
+margin-top:92px;
+background:linear-gradient(90deg,rgba(0,0,0,.64),rgba(0,0,0,.20)),url("hero.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+padding:85px 7%;
+color:white;
+animation:heroMove 20s ease-in-out infinite alternate
+}
 @keyframes heroMove{from{background-size:100%}to{background-size:106%}}
 .hero-content{max-width:650px}.hero h1{font-family:Marcellus,serif;font-size:76px;line-height:1;letter-spacing:6px;margin:0 0 14px;font-weight:400}.hero h2{font-family:Marcellus,serif;letter-spacing:5px;font-size:25px;margin:0 0 22px;font-weight:400}
 .gold-line{width:60px;height:2px;background:var(--dorado);margin:18px 0}.hero p{font-size:20px;line-height:1.8;max-width:430px}
