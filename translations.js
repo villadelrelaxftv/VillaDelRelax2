@@ -572,7 +572,7 @@ const VDR_TRANSLATIONS = {
 
   document.addEventListener("DOMContentLoaded", () => {
     const languageSelect = document.getElementById("languageSelect");
-    const savedLanguage = localStorage.getItem("vdrLanguage") || "es";
+    const savedLanguage = "es";
 
     applyLanguage(savedLanguage);
 
