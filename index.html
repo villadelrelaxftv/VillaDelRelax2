@@ -24,29 +24,29 @@
   <button class="mobile-toggle" type="button" onclick="toggleMobileMenu()" aria-label="Abrir menú">☰</button>
 
   <nav class="nav" id="mainNav">
-  <a href="#villa" data-i18n="menuVilla">La Villa</a>
-  <a href="#galeria" data-i18n="menuGaleria">Galería</a>
-  <a href="#servicios" data-i18n="menuServicios">Servicios</a>
-  <a href="#resenas" data-i18n="menuResenas">Reseñas</a>
-  <a href="#ubicacion" data-i18n="menuUbicacion">Ubicación</a>
-<a href="#contacto" data-i18n="menuDisponibilidad">Disponibilidad</a>
-  <a href="#contacto" data-i18n="menuContacto">Contacto</a>
-</nav>
+    <a href="#villa" data-i18n="menuVilla">La Villa</a>
+    <a href="#galeria" data-i18n="menuGaleria">Galería</a>
+    <a href="#servicios" data-i18n="menuServicios">Servicios</a>
+    <a href="#resenas" data-i18n="menuResenas">Reseñas</a>
+    <a href="#ubicacion" data-i18n="menuUbicacion">Ubicación</a>
+    <a href="#contacto" data-i18n="menuDisponibilidad">Disponibilidad</a>
+    <a href="#contacto" data-i18n="menuContacto">Contacto</a>
+  </nav>
 
- <div class="language-box">
-  <span class="globe" aria-hidden="true">
-    <i class="fa-solid fa-globe"></i>
-  </span>
+  <div class="language-box">
+    <span class="globe" aria-hidden="true">
+      <i class="fa-solid fa-globe"></i>
+    </span>
 
-  <select id="languageSelect" aria-label="Seleccionar idioma">
-    <option value="es">ES</option>
-    <option value="ca">CA</option>
-    <option value="en">EN</option>
-    <option value="de">DE</option>
-    <option value="fr">FR</option>
-    <option value="it">IT</option>
-  </select>
-</div>
+    <select id="languageSelect" aria-label="Seleccionar idioma">
+      <option value="es">ES</option>
+      <option value="ca">CA</option>
+      <option value="en">EN</option>
+      <option value="de">DE</option>
+      <option value="fr">FR</option>
+      <option value="it">IT</option>
+    </select>
+  </div>
 </header>
 
 <main>
@@ -87,7 +87,36 @@
     </div>
 
     <div class="gallery-caption" id="galleryCaption"></div>
-    <div class="gallery-thumbs" id="galleryThumbs"></div>
+
+    <!-- IMÁGENES AÑADIDAS AQUÍ -->
+    <div class="gallery-thumbs" id="galleryThumbs">
+      <img src="images/hero.jpg" alt="Villa del Relax" class="thumb active" onclick="selectPhoto(0)">
+      <img src="images/gBarbecue.jpg" alt="Barbacoa" class="thumb" onclick="selectPhoto(1)">
+      <img src="images/gBath1.jpg" alt="Baño 1" class="thumb" onclick="selectPhoto(2)">
+      <img src="images/gBatht2.jpg" alt="Baño 2" class="thumb" onclick="selectPhoto(3)">
+      <img src="images/gDouble.jpg" alt="Habitación Doble" class="thumb" onclick="selectPhoto(4)">
+      <img src="images/gDouble2.jpg" alt="Habitación Doble 2" class="thumb" onclick="selectPhoto(5)">
+      <img src="images/gEntrance.jpg" alt="Entrada" class="thumb" onclick="selectPhoto(6)">
+      <img src="images/gExterior.jpg" alt="Exterior" class="thumb" onclick="selectPhoto(7)">
+      <img src="images/gFachada.jpg" alt="Fachada" class="thumb" onclick="selectPhoto(8)">
+      <img src="images/gFamily.jpg" alt="Habitación Familiar" class="thumb" onclick="selectPhoto(9)">
+      <img src="images/gFamily2.jpg" alt="Habitación Familiar 2" class="thumb" onclick="selectPhoto(10)">
+      <img src="images/gGarden.jpg" alt="Jardín" class="thumb" onclick="selectPhoto(11)">
+      <img src="images/gKitchen1.jpg" alt="Cocina 1" class="thumb" onclick="selectPhoto(12)">
+      <img src="images/gKitchen2.jpg" alt="Cocina 2" class="thumb" onclick="selectPhoto(13)">
+      <img src="images/gLiving.jpg" alt="Salón" class="thumb" onclick="selectPhoto(14)">
+      <img src="images/gLiving2.jpg" alt="Salón 2" class="thumb" onclick="selectPhoto(15)">
+      <img src="images/gMaster.jpg" alt="Habitación Principal" class="thumb" onclick="selectPhoto(16)">
+      <img src="images/gMaster2.jpg" alt="Habitación Principal 2" class="thumb" onclick="selectPhoto(17)">
+      <img src="images/gPingpong.jpg" alt="Ping-pong" class="thumb" onclick="selectPhoto(18)">
+      <img src="images/gPoolday.jpg" alt="Piscina de día" class="thumb" onclick="selectPhoto(19)">
+      <img src="images/gPoolday2.jpg" alt="Piscina de día 2" class="thumb" onclick="selectPhoto(20)">
+      <img src="images/gPoolNight.jpg" alt="Piscina de noche" class="thumb" onclick="selectPhoto(21)">
+      <img src="images/gSofa.jpg" alt="Zona Sofá" class="thumb" onclick="selectPhoto(22)">
+      <img src="images/gSofa2.jpg" alt="Zona Sofá 2" class="thumb" onclick="selectPhoto(23)">
+      <img src="images/gTerrace.jpg" alt="Terraza" class="thumb" onclick="selectPhoto(24)">
+      <img src="images/gTerraceNight.jpg" alt="Terraza de noche" class="thumb" onclick="selectPhoto(25)">
+    </div>
   </section>
 
   <section class="quick-features">
@@ -167,12 +196,12 @@
     </div>
 
     <div class="contact-item">
-  <a class="contact-icon" href="https://wa.me/34666157193" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-  <strong>WHATSAPP</strong>
-  <span>+34 666 157 193</span>
-</div>
+      <a class="contact-icon" href="https://wa.me/34666157193" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <strong>WHATSAPP</strong>
+      <span>+34 666 157 193</span>
+    </div>
 
     <div class="contact-item">
       <a class="contact-icon" href="mailto:villadelrelaxftv@gmail.com" aria-label="Email">✉</a>
